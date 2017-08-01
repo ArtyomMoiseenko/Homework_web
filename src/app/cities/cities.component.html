@@ -1,0 +1,17 @@
+<div id="cities" class="flexbox">
+    <div class="flex">
+        <div><span>Favorite cities</span></div>
+        <div><button md-button (click)="add()">Add city</button></div>
+    </div>
+    <hr>
+      <div class="flex"  *ngFor="let item of data">
+          <div>
+              <span>{{item.Name}}</span>
+          </div>
+          <div>
+              <button md-button (click)="edit(item.Id)">Edit</button>
+              <button md-button (click)="delete(item.Id)">Delete</button>
+          </div>
+      </div>
+</div>
+<router-outlet></router-outlet> 

@@ -1,0 +1,14 @@
+<div class="data-input">
+  <form class="flex" name>
+      <div>
+          <input md-input type="text" name="city" [(ngModel)]="city"/>
+      </div>
+      <div>
+          <label>Count days:</label>
+          <select  name="days" [(ngModel)]="days"><option>1</option><option>3</option><option>7</option></select>
+      </div>
+      <button md-button (click)="getForecast(city, days)">Search</button>
+      <p>{{data}}</p>
+  </form>
+</div>
+<router-outlet></router-outlet>

@@ -1,0 +1,28 @@
+<table class="log-table">
+    <caption>History of queries users</caption>
+    <tr>
+        <th>Ip</th>
+        <th>City</th>
+        <th>Date</th>
+        <th>Temperature</th>
+        <th>Pressure</th>
+        <th>SpeedWind</th>
+        <th>DescriptionWeather</th>
+        <th>Humidity</th>
+        <th>model.Clouds</th>
+    </tr>
+    <tr *ngFor="let item of data">
+      <td>{{item.Ip}}</td>
+      <td>{{item.City}}</td>
+      <td>{{item.Date}}</td>
+      <td>{{item.Temperature}} &#8451;</td>
+      <td>{{item.Pressure}} hPa</td>
+      <td>{{item.SpeedWind}} m/s</td>
+      <td>{{item.DescriptionWeather}}</td>
+      <td>{{item.Humidity}} %</td>
+      <td>{{item.Clouds}} %</td>
+    </tr>
+</table>
+<br />
+<br />
+<br />

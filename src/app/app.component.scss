@@ -1,0 +1,91 @@
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-image: url(./fonts/background-opacity.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.flexbox-header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background: rgba(0, 255, 0, 0.5);
+    padding: 0 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.flexbox-menu {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-items: center;
+
+    div {
+        margin: 0 10px;
+
+        a {
+            color: white;
+            font-size: 13pt;
+        }
+        a:hover {
+            background-color: white;
+            color: navy;     
+            text-decoration: none;
+            border-radius: 10%;
+            transition: all 0.5s ease-out;
+        }
+    }
+}
+
+.logo {
+    font-size: 30pt;
+    color: white;
+}
+
+.logo:hover {
+    background-color: white;
+    color: navy;
+    text-decoration: none;
+    border-radius: 10%;
+    transition: all 0.5s ease-out;
+}
+
+.main-content {
+    .flexbox {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    form{
+        div {
+            margin: 0 1vw;
+        }
+    }
+}
+
+.flexbox-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 255, 0, 0.5);
+
+    div{
+        text-align: right;
+    }
+
+    hr {
+        padding: 0;
+        margin: 0;
+    }
+}

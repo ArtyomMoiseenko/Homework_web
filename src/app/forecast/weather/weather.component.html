@@ -1,0 +1,34 @@
+<div class="all">
+    <div class="detail-weather-temperature">
+        <div><h2>{{ data.City.Name }}, {{ data.City.Country }}</h2></div>
+        <div class="icon-temperature"><img src="{{data.List[0].Weather[0].Icon}}" /><h3 class="text-right" id="inline">{{ data.List[0].Temp.Day }}&#8451;</h3></div>
+        <div><h5>GPS ({{ data.City.Coord.Lat }} ; {{ data.City.Coord.Lon }})</h5></div>
+        <div><h5>Now - {{ date | date: 'medium' }}</h5></div>
+    </div>
+    <table class="details">
+        <tr>
+            <th>Date</th>
+            <th>Morning temperature</th>
+            <th>Afternoon temperature</th>
+            <th>Evening temperature</th>
+            <th>Night temperature</th>
+            <th>Weather</th>
+            <th>Atmosthheric thressure</th>
+            <th>Humidity</th>
+            <th>Wind stheed</th>
+            <th>Cloudiness</th>
+        </tr>
+        <tr *ngFor="let item of data.List">
+            <td>{{ date | date: 'medium'}}</td>
+            <td>{{ item.Temp.Morn }}&#8451;</td>
+            <td>{{ item.Temp.Day }}&#8451;</td>
+            <td>{{ item.Temp.Eve }}&#8451;</td>
+            <td>{{ item.Temp.Night }}&#8451;</td>
+            <td>{{ item.Weather[0].Description }}</td>
+            <td>{{ item.Pressure }} hPa</td>
+            <td>{{ item.Humidity }} %</td>
+            <td>{{ item.Speed }} m/s</td>
+            <td>{{ item.Clouds }} %</td>
+        </tr>
+    </table>
+</div>

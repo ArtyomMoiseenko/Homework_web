@@ -1,0 +1,57 @@
+.all {
+    display: flex;
+    flex-direction: row;
+    margin-left: 4vw;
+    margin-top: 2vw;
+
+    div.detail-weather-temperature {
+        border-radius: 5px;
+        background-color: rgba(255,255,255,0.5);
+        background-repeat: no-repeat;
+        color: navy;
+        box-shadow: 0 0 1px rgba(0,0,0,0.5);
+        border: 1px solid rgba(255,255,255,0.7);
+        display: flex;
+        flex-direction: column;
+        vertical-align: top;
+        height:18vw;
+        width: 10vw;
+        padding:5px;
+
+        .icon-temperature{
+            display: flex;
+            flex-direction: row;
+        }
+
+        .inline {
+            display: inline-block;
+            text-align: right;
+        }
+    }
+
+    .details {
+        margin-left: 5vw;
+        border-radius: 5px;
+        vertical-align: top;
+        color: lightblue;
+        background-color: rgba(0,0,0,0.5);
+        box-shadow: 0 0 1px rgba(0,0,0,0.5);
+        border: 1px solid rgba(255,255,255, 0.5);
+        width: 70vw;
+        padding: 5px;
+        border-collapse: collapse;
+        text-align: center;
+
+        th {
+            vertical-align: top;
+            color: ghostwhite;
+            font-size: 10pt;
+            text-align: center;
+        }
+    }
+}
+
+
+
+
+
